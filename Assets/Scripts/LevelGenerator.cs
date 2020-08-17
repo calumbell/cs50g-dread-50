@@ -57,9 +57,18 @@ public class LevelGenerator : MonoBehaviour {
 					characterPlaced = true;
 				}
 
-				// create floor and ceiling
-				CreateChildPrefab(floorPrefab, floorParent, x, 0, z);
+				// Rarely, spawn a hole as long as the character didn't spawn at the current position
+				bool spawnHole = Random.value > 0.95 &&
+					x != characterController.transform.position.x &&
+					z != characterController.transform.position.z &&
+					!mapData[z, x];
 
+				// only create floor if we don't want to spawn a hole
+				if (!spawnHole) {
+					CreateChildPrefab(floorPrefab, floorParent, x, 0, z);
+				}
+
+				// create the roof
 				if (generateRoof) {
 					CreateChildPrefab(ceilingPrefab, wallsParent, x, 4, z);
 				}
