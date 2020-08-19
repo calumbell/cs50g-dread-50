@@ -16,7 +16,7 @@ public class DespawnOnHeight : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if (transform.position.y < despawnHeight) {
-            SceneManager.LoadScene("Title");
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
