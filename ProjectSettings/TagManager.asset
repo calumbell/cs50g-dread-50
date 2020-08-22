@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Pickup
   - Audio
+  - Canvas
+  - Level UI
   layers:
   - Default
   - TransparentFX

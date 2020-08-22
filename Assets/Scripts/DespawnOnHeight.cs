@@ -14,8 +14,15 @@ public class DespawnOnHeight : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+        // Check if player has fallen out of level
+
         if (transform.position.y < despawnHeight) {
+            // stop the audio
             Destroy(audioSource);
+            // reset level counter
+            LevelUI.reset();
+            // load next scene
             SceneManager.LoadScene("GameOver");
         }
     }
