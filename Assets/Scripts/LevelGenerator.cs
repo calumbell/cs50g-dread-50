@@ -58,7 +58,8 @@ public class LevelGenerator : MonoBehaviour {
 				}
 
 				// Rarely, spawn a hole as long as the character didn't spawn at the current position
-				bool spawnHole = Random.value > 0.95 &&
+				// Spawn chance = n/(n+5), where n is the no. of tiles carved
+				bool spawnHole = Random.value > ((float)tilesToRemove) / ((float)tilesToRemove + 5.0f) &&
 					x != characterController.transform.position.x &&
 					z != characterController.transform.position.z &&
 					!mapData[z, x];

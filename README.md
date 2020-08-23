@@ -1,6 +1,6 @@
 # Dread-50
 
-Assignment 9 of *CS50 Introduction to Games Development* (by EDX/HarvardX).
+Assignment 9 of *CS50 Introduction to Games Development* (by EDX/HarvardX) was to implement new features for a simple 3D maze exploration game that was heavily inspired by the famous VR game *Dreadhalls*. This weeks assignment was fairly light by design (to give us more time to work on our final projects), but it served as a good introduction to working with generative algorithms and scnene/data management in Unity.
 
 ## Requirements
 - Unity (v 2018.4) -> https://unity3d.com/get-unity/download/archive or via Unity Hub https://unity3d.com/get-unity/download/archive
