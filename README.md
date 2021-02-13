@@ -1,25 +1,33 @@
 # Dread-50
 
-Assignment 9 of *CS50 Introduction to Games Development* (by EDX/HarvardX) was to implement new features for a simple 3D maze exploration game that was heavily inspired by the famous VR game *Dreadhalls*. This weeks assignment was fairly light by design (to give us more time to work on our final projects), but it served as a good introduction to working with generative algorithms and scnene/data management in Unity.
+Project 9 of [CS50's Introduction to Games Development](https://cs50.harvard.edu/games/2018/)
 
-## Requirements
-- Unity (v 2018.4) -> https://unity3d.com/get-unity/download/archive or via Unity Hub https://unity3d.com/get-unity/download/archive
+*Dread-50* is a game inspired by the VR game [Dreadhalls](http://www.dreadhalls.com/). 
 
-## Topics
-- Texturing
-- Materials & Lighting
-- 3D Maze Generation
-- First-person control
-- Multiple scenes
-- Fog
-- UI Components
+[Full project specification](https://cs50.harvard.edu/games/2018/projects/9/dreadhalls/).
+
+## Setup
+First, clone this repository:
+```bash
+git clone https://github.com/calumbell/cs50g-helicopter-50
+```
+
+Download the [Unity Hub](https://unity3d.com/get-unity/download/) and install v 2018.4. Locate the *cs50g-dread-50* directory in the Unity Hub to open it. Once the project has opened in Unity, press the Play button to test the game.
+
 
 ## Assessment Criteria
 - Spawn holes in the floor of the maze that the player can fall through.
 - When the player falls through any holes, transition to a “Game Over” screen similar to the Title Screen, implemented as a separate scene.
 - Add a Text label to the Play scene that keeps track of which maze they’re in, incrementing each time they progress to the next maze.
 
-## Links
-Learn more about CS50G: https://www.edx.org/course/cs50s-introduction-to-game-development
+## Visuals
+You can see a video demonstration of this project [here](https://youtu.be/gp43lzsEcS0).
 
-You can view the distribution code by checking out this repo's initial commit, or by downloading it from: cdn.cs50.net/games/2019/x/assignments/9/assignment9.zip
+<img src="Assets/Screenshots/screenshot-start.png" width=400>
+<img src="Assets/Screenshots/screenshot-corridor.png" width=400>
+<img src="Assets/Screenshots/screenshot-coin.png" width=400>
+<img src="Assets/Screenshots/screenshot-pit.png" width=400>
+<img src="Assets/Screenshots/screenshot-gameover.png" width=400>
+
+## Requirements
+*Dread-50* was built using the [Unity](https://unity.com/) Game Engine (version 2018.4)
